@@ -74,37 +74,53 @@ body {
     align-self: stretch;
 
     .content__home {
-        @include flex-column;
-        justify-content: center;
+        @include flex-row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
 
-        .content__home_title {
-            display: block;
-            width: fit-content;
-            background-color: $main_gray;
-            color: $main_white;
-            padding: 10px 20px;
-            font-family: 'CreatoDisplay-Black';
-            font-size: 96px;
-            text-transform: uppercase;
-            margin: 0;
+        .content__home_left {
+            @include flex-column;
+            justify-content: center;
+
+            .content__home_title {
+                display: block;
+                width: fit-content;
+                background-color: $main_gray;
+                color: $main_white;
+                padding: 10px 20px;
+                font-family: 'CreatoDisplay-Black';
+                font-size: 96px;
+                text-transform: uppercase;
+                margin: 0;
+            }
+    
+            .content__home_subtitle {
+                display: block;
+                width: fit-content;
+                color: $main_gray;
+                font-family: 'CreatoDisplay-Black';
+                font-size: 64px;
+                margin: 0;
+            }
+    
+            .content__home_desc {
+                display: block;
+                color: $main_gray;
+                width: 70%;
+                font-family: 'CreatoDisplay-Bold';
+                font-size: 36px;
+                margin: 0;
+            }
+
         }
 
-        .content__home_subtitle {
-            display: block;
-            width: fit-content;
-            color: $main_gray;
-            font-family: 'CreatoDisplay-Black';
-            font-size: 64px;
-            margin: 0;
-        }
+        .content__home_right {
 
-        .content__home_desc {
-            display: block;
-            color: $main_gray;
-            width: 70%;
-            font-family: 'CreatoDisplay-Bold';
-            font-size: 36px;
-            margin: 0;
+            img {
+                width: 80%;
+                height: 80%;
+            }
         }
     }
 }
@@ -132,12 +148,13 @@ body {
                 height: 15px;
             }
 
-            p {
+            a {
                 margin: 0;
                 font-family: 'CreatoDisplay-Bold';
                 font-size: 24px;
                 color: $main_gray;
                 text-transform: uppercase;
+                text-decoration: none;
             }
         }
     }
