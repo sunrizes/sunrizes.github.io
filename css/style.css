@@ -1,0 +1,139 @@
+@font-face {
+  font-family: "CreatoDisplay-Black";
+  src: url(../fonts/CreatoDisplay-Black.otf);
+}
+@font-face {
+  font-family: "CreatoDisplay-Bold";
+  src: url(../fonts/CreatoDisplay-Bold.otf);
+}
+@font-face {
+  font-family: "CreatoDisplay-ExtraBold";
+  src: url(../fonts/CreatoDisplay-ExtraBold.otf);
+}
+@font-face {
+  font-family: "CreatoDisplay-Light";
+  src: url(../fonts/CreatoDisplay-Light.otf);
+}
+@font-face {
+  font-family: "CreatoDisplay-Medium";
+  src: url(../fonts/CreatoDisplay-Medium.otf);
+}
+@font-face {
+  font-family: "CreatoDisplay-Regular";
+  src: url(../fonts/CreatoDisplay-Regular.otf);
+}
+@font-face {
+  font-family: "CreatoDisplay-Thin";
+  src: url(../fonts/CreatoDisplay-Thin.otf);
+}
+body {
+  margin: 0 50px;
+  min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+.header .header__top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 5px solid #414141;
+}
+.header .header__top .header__top_title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.header .header__top .header__top_title img {
+  width: 34px;
+  height: 42px;
+}
+.header .header__top .header__top_title h1 {
+  font-family: "CreatoDisplay-Black";
+  font-size: 64px;
+  margin: 0;
+  color: #414141;
+}
+.header .header__top .header__top_timer h1 {
+  font-family: "CreatoDisplay-Black";
+  color: #414141;
+  font-size: 48px;
+  margin: 0;
+}
+.header .header__bottom {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.header .header__bottom span {
+  display: block;
+  background-color: #414141;
+  width: 15px;
+  height: 15px;
+}
+.header .header__bottom p {
+  font-family: "CreatoDisplay-Bold";
+  color: #414141;
+  font-size: 24px;
+  margin: 0;
+}
+
+.content {
+  flex: 1;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top: 5px solid #414141;
+}
+.footer .footer__left {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+.footer .footer__left .footer__left_link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.footer .footer__left .footer__left_link span {
+  display: block;
+  background-color: #414141;
+  width: 15px;
+  height: 15px;
+}
+.footer .footer__left .footer__left_link p {
+  margin: 0;
+  font-family: "CreatoDisplay-Bold";
+  font-size: 24px;
+  color: #414141;
+  text-transform: uppercase;
+}
+.footer .footer__right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+}
+.footer .footer__right .footer__right_socials {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.footer .footer__right .footer__right_date {
+  font-family: "CreatoDisplay-Bold";
+  font-size: 24px;
+  color: #414141;
+}
+
+/*# sourceMappingURL=style.css.map */

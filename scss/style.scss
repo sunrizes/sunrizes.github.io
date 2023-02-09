@@ -1,0 +1,130 @@
+@import "colors";
+@import "fonts";
+
+body {
+    margin: 0 50px;
+    min-height: 100vh;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+
+    .header__top {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 5px solid $main_gray;
+
+        .header__top_title {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 10px;
+
+            img {
+                width: 34px;
+                height: 42px;
+            }
+
+            h1 {
+                font-family: 'CreatoDisplay-Black';
+                font-size: 64px;
+                margin: 0;
+                color: $main_gray;
+            }
+        }
+
+        .header__top_timer {
+            h1 {
+                font-family: 'CreatoDisplay-Black';
+                color: $main_gray;
+                font-size: 48px;
+                margin: 0;
+            }
+        }
+    }
+
+    .header__bottom {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+
+        span {
+            display: block;
+            background-color: $main_gray;
+            width: 15px;
+            height: 15px;
+        }
+
+        p {
+            font-family: 'CreatoDisplay-Bold';
+            color: $main_gray;
+            font-size: 24px;
+            margin: 0;
+        }
+    }
+}
+
+.content {
+    flex: 1;
+}
+
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 5px solid $main_gray;
+
+    .footer__left {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+
+        .footer__left_link {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 10px;
+
+            span {
+                display: block;
+                background-color: $main_gray;
+                width: 15px;
+                height: 15px;
+            }
+
+            p {
+                margin: 0;
+                font-family: 'CreatoDisplay-Bold';
+                font-size: 24px;
+                color: $main_gray;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .footer__right {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 40px;
+
+        .footer__right_socials {
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+        }
+
+        .footer__right_date {
+            font-family: 'CreatoDisplay-Bold';
+            font-size: 24px;
+            color: $main_gray;
+        }
+    }
+}
