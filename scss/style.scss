@@ -1,29 +1,26 @@
 @import "colors";
 @import "fonts";
+@import "mixins";
 
 body {
     margin: 0 50px;
     min-height: 100vh;
-    display:flex;
-    flex-direction:column;
+    @include flex-column;
 }
 
 .header {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     gap: 15px;
     width: 100%;
 
     .header__top {
-        display: flex;
-        flex-direction: row;
+        @include flex-row;
         justify-content: space-between;
         align-items: center;
         border-bottom: 5px solid $main_gray;
 
         .header__top_title {
-            display: flex;
-            flex-direction: row;
+            @include flex-row;
             align-items: center;
             gap: 10px;
 
@@ -51,8 +48,7 @@ body {
     }
 
     .header__bottom {
-        display: flex;
-        flex-direction: row;
+        @include flex-row;
         align-items: center;
         gap: 10px;
 
@@ -73,24 +69,59 @@ body {
 }
 
 .content {
+    display: flex;
     flex: 1;
+    align-self: stretch;
+
+    .content__home {
+        @include flex-column;
+        justify-content: center;
+
+        .content__home_title {
+            display: block;
+            width: fit-content;
+            background-color: $main_gray;
+            color: $main_white;
+            padding: 10px 20px;
+            font-family: 'CreatoDisplay-Black';
+            font-size: 96px;
+            text-transform: uppercase;
+            margin: 0;
+        }
+
+        .content__home_subtitle {
+            display: block;
+            width: fit-content;
+            color: $main_gray;
+            font-family: 'CreatoDisplay-Black';
+            font-size: 64px;
+            margin: 0;
+        }
+
+        .content__home_desc {
+            display: block;
+            color: $main_gray;
+            width: 70%;
+            font-family: 'CreatoDisplay-Bold';
+            font-size: 36px;
+            margin: 0;
+        }
+    }
 }
 
 
 .footer {
-    display: flex;
-    flex-direction: row;
+    @include flex-row;
     justify-content: space-between;
     border-top: 5px solid $main_gray;
+    padding: 15px 0px;
 
     .footer__left {
-        display: flex;
-        flex-direction: row;
+        @include flex-row;
         gap: 40px;
 
         .footer__left_link {
-            display: flex;
-            flex-direction: row;
+            @include flex-row;
             align-items: center;
             gap: 10px;
 
@@ -112,18 +143,17 @@ body {
     }
 
     .footer__right {
-        display: flex;
-        flex-direction: row;
+        @include flex-row;
         align-items: center;
         gap: 40px;
 
         .footer__right_socials {
-            display: flex;
-            flex-direction: row;
+            @include flex-row;
             gap: 30px;
         }
 
         .footer__right_date {
+            margin: 0;
             font-family: 'CreatoDisplay-Bold';
             font-size: 24px;
             color: $main_gray;
