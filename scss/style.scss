@@ -124,6 +124,7 @@ body {
         justify-content: space-between;
         align-items: center;
         width: 100%;
+        //display: none;
 
         .content__home_left {
             @include flex-column;
@@ -249,6 +250,77 @@ body {
 
                 a {
                     color: $main_gray;
+                }
+            }
+        }
+
+        @media only screen and (max-width: $tablet-portrait) {
+            .content__portfolio_article {
+
+                .content__portfolio_article_title {
+                    font-size: 72px;
+                }
+    
+                .content__portfolio_article_tech {
+                    font-size: 28px;
+                }
+    
+                .content__portfolio_article_date {
+                    font-size: 28px;
+                }
+            }
+        }
+
+        @media only screen and (max-width: $phone-landscape) {
+            align-items: center;
+            width: 100%;
+
+            .content__portfolio_article {
+
+                .content__portfolio_article_title {
+                    font-size: 64px;
+                    line-height: 72px;
+                    text-align: center;
+                }
+    
+                .content__portfolio_article_tech {
+                    font-size: 18px;
+                    text-align: center;
+                }
+    
+                .content__portfolio_article_date {
+                    font-size: 18px;
+                    text-align: center;
+                }
+            }
+        }
+
+        @media only screen and (max-width: 620px) {
+            .content__portfolio_article {
+
+                .content__portfolio_article_title {
+                    font-size: 48px;
+                    line-height: 50px;
+                }
+            }
+        }
+
+        @media only screen and (max-width: $phone-portrait) {
+            gap: 30px;
+
+            .content__portfolio_article {
+
+                .content__portfolio_article_title {
+                    font-size: 36px;
+                    line-height: 40px;
+                }
+    
+                .content__portfolio_article_tech {
+                    font-size: 18px;
+                }
+    
+                .content__portfolio_article_date {
+                    font-size: 18px;
                 }
             }
         }
