@@ -1,11 +1,16 @@
 @import "colors";
 @import "fonts";
 @import "mixins";
+@import "responsive";
 
 body {
     margin: 0 50px;
     min-height: 100vh;
     @include flex-column;
+
+    @media only screen and (max-width : $phone-landscape) {
+        margin: 0 20px;
+    }
 }
 
 .header {
@@ -37,12 +42,17 @@ body {
             }
         }
 
-        .header__top_timer {
-            h1 {
-                font-family: 'CreatoDisplay-Black';
-                color: $main_gray;
-                font-size: 48px;
-                margin: 0;
+        .header__top_menu {
+            @include flex-column;
+            gap: 5px;
+            cursor: pointer;
+            display: none;
+
+            span {
+                display: block;
+                width: 30px;
+                height: 5px;
+                background-color: $main_gray;
             }
         }
     }
@@ -64,6 +74,41 @@ body {
             color: $main_gray;
             font-size: 24px;
             margin: 0;
+        }
+    }
+
+    @media only screen and (max-width : $phone-landscape) {
+        gap: 5px;
+
+        .header__top {
+
+            .header__top_title {
+
+                img {
+                    width: 16px;
+                    height: 21px;
+                }
+
+                h1 {
+                    font-size: 40px;
+                }
+            }
+
+            .header__top_menu {
+                display: inherit;
+            }
+        }
+
+        .header__bottom {
+
+            span {
+                height: 10px;
+                width: 10px;
+            }
+
+            p {
+                font-size: 16px;
+            }
         }
     }
 }
@@ -94,7 +139,7 @@ body {
                 text-transform: uppercase;
                 margin: 0;
             }
-    
+
             .content__home_subtitle {
                 display: block;
                 width: fit-content;
@@ -103,7 +148,7 @@ body {
                 font-size: 64px;
                 margin: 0;
             }
-    
+
             .content__home_desc {
                 display: block;
                 color: $main_gray;
@@ -120,6 +165,52 @@ body {
             img {
                 width: 80%;
                 height: 80%;
+            }
+        }
+
+        @media only screen and (max-width: $tablet-landscape) {
+
+            .content__home_right {
+                display: none;
+            }
+        }
+
+        @media only screen and (max-width : $phone-landscape) {
+            justify-content: center;
+
+            .content__home_left {
+                align-items: center;
+
+                .content__home_title {
+                    font-size: 64px;
+                }
+
+                .content__home_subtitle {
+                    font-size: 48px;
+                }
+
+                .content__home_desc {
+                    font-size: 24px;
+                    text-align: center;
+                    width: 100%;
+                }
+            }
+        }
+
+        @media only screen and (max-width : $phone-portrait) {
+            .content__home_left {
+
+                .content__home_title {
+                    font-size: 48px;
+                }
+
+                .content__home_subtitle {
+                    font-size: 36px;
+                }
+
+                .content__home_desc {
+                    font-size: 18px;
+                }
             }
         }
     }
@@ -156,6 +247,13 @@ body {
                 text-transform: uppercase;
                 text-decoration: none;
             }
+
+            &:hover {
+
+                span {
+                    animation: linkOnHover 0.5s;
+                }
+            }
         }
     }
 
@@ -174,6 +272,82 @@ body {
             font-family: 'CreatoDisplay-Bold';
             font-size: 24px;
             color: $main_gray;
+        }
+    }
+
+    @media only screen and (max-width: $tablet-landscape) {
+        .footer__left {
+            gap: 20px;
+
+            .footer__left_link {
+                a {
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .footer__right {
+            gap: 20px;
+
+            .footer__right_date {
+                font-size: 16px;
+            }
+        }
+    }
+
+    @media only screen and (max-width: $tablet-portrait) {
+        .footer__left {
+            gap: 15px;
+
+            .footer__left_link {
+                span {
+                    width: 10px;
+                    height: 10px;
+                }
+
+                a {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .footer__right {
+            gap: 15px;
+
+            .footer__right_socials {
+                gap: 15px;
+
+                img {
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+
+            .footer__right_date {
+                font-size: 14px;
+            }
+        }
+    }
+
+    @media only screen and (max-width : $phone-landscape) {
+        justify-content: flex-end;
+
+        .footer__left {
+            display: none;
+        }
+    }
+
+    @media only screen and (max-width : $phone-portrait) {
+        justify-content: center;
+    }
+
+    @keyframes linkOnHover {
+        0% {
+            transform: rotateY(0deg);
+        }
+
+        100% {
+            transform: rotateY(360deg);
         }
     }
 }
