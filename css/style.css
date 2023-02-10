@@ -97,6 +97,7 @@ body {
   color: #414141;
   font-size: 24px;
   margin: 0;
+  text-transform: uppercase;
 }
 @media only screen and (max-width: 768px) {
   .header {
@@ -132,6 +133,7 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  display: none;
 }
 .content .content__home .content__home_left {
   display: flex;
@@ -203,6 +205,158 @@ body {
   .content .content__home .content__home_left .content__home_desc {
     font-size: 18px;
   }
+}
+.content .content__portfolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  display: none;
+}
+.content .content__portfolio .content__portfolio_article {
+  display: flex;
+  flex-direction: column;
+}
+.content .content__portfolio .content__portfolio_article .content__portfolio_article_title {
+  font-family: "CreatoDisplay-Black";
+  font-size: 96px;
+  line-height: 80px;
+}
+.content .content__portfolio .content__portfolio_article .content__portfolio_article_title a {
+  color: #414141;
+  text-decoration: none;
+}
+.content .content__portfolio .content__portfolio_article .content__portfolio_article_tech {
+  font-family: "CreatoDisplay-ExtraBold";
+  font-size: 36px;
+  color: #414141;
+}
+.content .content__portfolio .content__portfolio_article .content__portfolio_article_date {
+  font-family: "CreatoDisplay-Medium";
+  font-size: 36px;
+  color: #414141;
+}
+.content .content__portfolio .content__portfolio_article .content__portfolio_article_date a {
+  color: #414141;
+}
+.content .content__about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.content .content__about .content__about_bio {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 40%;
+}
+.content .content__about .content__about_bio .content__about_bio_title {
+  font-family: "CreatoDisplay-Black";
+  color: #414141;
+  font-size: 64px;
+  text-transform: uppercase;
+}
+.content .content__about .content__about_bio .content__about_bio_desc {
+  font-family: "CreatoDisplay-Medium";
+  font-size: 24px;
+  color: #414141;
+}
+.content .content__about .content__about_skills {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 40%;
+}
+.content .content__about .content__about_skills .content__about_skills_title {
+  font-family: "CreatoDisplay-Black";
+  color: #414141;
+  font-size: 64px;
+  text-transform: uppercase;
+}
+.content .content__about .content__about_skills .content__about_skills_list {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+}
+.content .content__about .content__about_skills .content__about_skills_list .content__about_skills_list_item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.content .content__about .content__about_skills .content__about_skills_list .content__about_skills_list_item div {
+  font-family: "CreatoDisplay-Bold";
+  font-size: 20px;
+  color: #414141;
+}
+.content .content__about .content__about_skills .content__about_skills_experience {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  gap: 20px;
+}
+.content .content__about .content__about_skills .content__about_skills_experience .content__about_skills_experience_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #414141;
+  color: #ffffff;
+  padding: 20px 40px;
+  gap: 10px;
+  display: none;
+  width: 100%;
+  height: 150px;
+}
+.content .content__about .content__about_skills .content__about_skills_experience .content__about_skills_experience_item .content__about_skills_experience_item_title {
+  font-family: "CreatoDisplay-Black";
+  font-size: 24px;
+}
+.content .content__about .content__about_skills .content__about_skills_experience .content__about_skills_experience_item .content__about_skills_experience_item_subtitle {
+  font-family: "CreatoDisplay-Bold";
+  font-size: 14px;
+}
+.content .content__about .content__about_skills .content__about_skills_experience .content__about_skills_experience_item .content__about_skills_experience_item_desc {
+  font-family: "CreatoDisplay-Regular";
+  font-size: 14px;
+}
+.content .content__about .content__about_skills .content__about_skills_experience .arrowleft {
+  position: absolute;
+  top: 40%;
+  left: 14px;
+  font-size: 24px;
+  color: #ffffff;
+  cursor: pointer;
+}
+.content .content__about .content__about_skills .content__about_skills_experience .arrowright {
+  position: absolute;
+  top: 40%;
+  right: 14px;
+  font-size: 24px;
+  color: #ffffff;
+  cursor: pointer;
+}
+.content .content__about .content__about_skills .content__about_skills_expdots {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+}
+.content .content__about .content__about_skills .content__about_skills_expdots .expdot {
+  cursor: pointer;
+  height: 14px;
+  width: 14px;
+  background-color: #ffffff;
+  border: 1px solid #414141;
+  margin: 0 2px;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.content .content__about .content__about_skills .content__about_skills_expdots .active {
+  background-color: #414141;
+  height: 15px;
+  width: 15px;
+  border: none;
 }
 
 .footer {
