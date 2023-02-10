@@ -9,7 +9,6 @@ body {
     @include flex-column;
 
     @media only screen and (max-width : $phone-landscape) {
-        min-height: 95vh;
         margin: 0 20px;
     }
 }

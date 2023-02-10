@@ -34,7 +34,6 @@ body {
 }
 @media only screen and (max-width: 768px) {
   body {
-    min-height: 95vh;
     margin: 0 20px;
   }
 }
