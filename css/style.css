@@ -133,7 +133,6 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  display: none;
 }
 .content .content__home .content__home_left {
   display: flex;
@@ -244,6 +243,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  display: none;
 }
 .content .content__about .content__about_bio {
   display: flex;

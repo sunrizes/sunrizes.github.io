@@ -124,7 +124,6 @@ body {
         justify-content: space-between;
         align-items: center;
         width: 100%;
-        display: none;
 
         .content__home_left {
             @include flex-column;
@@ -259,6 +258,7 @@ body {
         @include flex-row;
         justify-content: space-between;
         align-items: center;
+        display: none;
 
         .content__about_bio {
             @include flex-column;
