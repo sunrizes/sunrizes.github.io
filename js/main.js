@@ -6,9 +6,14 @@ const displayContent = (id) => {
          content[i].style.display = "none";
       }
       linkId.style.display = "flex";
+      document.getElementById("mobilemenu").style.display = "none";
       document.getElementById("header_text").innerText = id;
     } 
     return false;
+}
+
+const showMobileMenu = (state) => {
+    state ? document.getElementById("mobilemenu").style.display = "flex" : document.getElementById("mobilemenu").style.display = "none";
 }
 
 const showSlides = (n) => {

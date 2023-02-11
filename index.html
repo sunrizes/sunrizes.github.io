@@ -17,7 +17,7 @@
                 <img src="images/logoarrow.svg" alt="NULL">
                 <h1>SUNRIZES</h1>
             </div>
-            <div class="header__top_menu">
+            <div class="header__top_menu" onclick="showMobileMenu(true)">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -26,6 +26,28 @@
         <div class="header__bottom">
             <span></span>
             <p id="header_text">HOME</p>
+        </div>
+        <div class="header__mobile-menu" id="mobilemenu">
+            <div class="header__mobile-menu_list">
+                <a onclick="displayContent('home')">Home</a>
+                <a onclick="displayContent('portfolio')">Portfolio</a>
+                <a onclick="displayContent('about')">About</a>
+                <a href="">Contact</a>
+                <div class="header__mobile-menu_list_socials">
+                    <a href="mailto&#58;m%6&#57;&#108;osta%74ic&#98;&#100;p&#64;gm%61il&#46;com">
+                        <img src="images/social_mail.svg"/>
+                    </a>
+                    <a href="https://www.linkedin.com/in/milos-tatic">
+                        <img src="images/social_linkedin.svg"/>
+                    </a>
+                    <a href="https://www.youtube.com/@sunrizes8362">
+                        <img src="images/social_youtube.svg"/>
+                    </a>
+                </div>
+            </div>
+            <div class="header__mobile-menu_close" onclick="showMobileMenu(false)">
+
+            </div>
         </div>
     </header>
 
@@ -131,7 +153,8 @@
                             Oct 2022. - Dec 2022.
                         </div>
                         <div class="content__about_skills_experience_item_desc">
-                            Worked on developing and maintaining web apps for scheduling and management, as well as a web shop GritNCode.
+                            Worked on developing and maintaining web apps for scheduling and management, as well as a
+                            web shop GritNCode.
                         </div>
                     </div>
                     <div class="content__about_skills_experience_item">
@@ -158,7 +181,8 @@
                         </div>
                         <div class="content__about_skills_experience_item_desc">
                             Worked as a sole developer on the development of 2D mobile games for Android OS.
-                            Cat Lovescapes - developed the mobile version of the game, and later ported the game to PC and macOS for the Steam release.
+                            Cat Lovescapes - developed the mobile version of the game, and later ported the game to PC
+                            and macOS for the Steam release.
                         </div>
                     </div>
                     <div class="content__about_skills_experience_item">
@@ -209,7 +233,7 @@
         </div>
         <div class="footer__right">
             <div class="footer__right_socials">
-                <a href="mailto:milostaticbdp@gmail.com">
+                <a href="mailto&#58;m%6&#57;&#108;osta%74ic&#98;&#100;p&#64;gm%61il&#46;com">
                     <img src="images/social_mail.svg" alt="mail">
                 </a>
                 <a href="https://www.linkedin.com/in/milos-tatic">
