@@ -32,7 +32,7 @@
                 <a onclick="displayContent('home')">Home</a>
                 <a onclick="displayContent('portfolio')">Portfolio</a>
                 <a onclick="displayContent('about')">About</a>
-                <a href="">Contact</a>
+                <a onclick="displayContent('contact')">Contact</a>
                 <div class="header__mobile-menu_list_socials">
                     <a href="mailto&#58;m%6&#57;&#108;osta%74ic&#98;&#100;p&#64;gm%61il&#46;com">
                         <img src="images/social_mail.svg"/>
@@ -210,6 +210,18 @@
             </div>
         </div>
 
+        <div class="content__contact contenttohide" id="contact">
+            <div class="content__contact_title">
+                Contact Me
+            </div>
+            <div class="content__contact_desc">
+                If you have a job offer, if you want to collaborate, or if you just want to say hi, you can reach me through e-mail.
+            </div>
+            <button onclick="location.href='mailto&#58;m%6&#57;&#108;osta%74ic&#98;&#100;p&#64;gm%61il&#46;com'" class="content__contact_button">
+                Contact Me
+            </button>
+        </div>
+
     </main>
 
     <footer class="footer">
@@ -226,7 +238,7 @@
                 <span></span>
                 <a href="#">About</a>
             </div>
-            <div class="footer__left_link">
+            <div class="footer__left_link" onclick="displayContent('contact')">
                 <span></span>
                 <a href="#">Contact</a>
             </div>
