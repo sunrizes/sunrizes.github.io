@@ -89,6 +89,7 @@ body {
         width: 100vw;
         background-color: $main_white;
         display: none;
+        z-index: 100;
 
         .header__mobile-menu_list {
             @include flex-column;

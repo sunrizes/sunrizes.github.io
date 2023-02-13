@@ -111,6 +111,7 @@ body {
   width: 100vw;
   background-color: #ffffff;
   display: none;
+  z-index: 100;
 }
 .header .header__mobile-menu .header__mobile-menu_list {
   display: flex;
