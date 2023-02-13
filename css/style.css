@@ -460,6 +460,173 @@ body {
   width: 15px;
   border: none;
 }
+@media only screen and (max-width: 1224px) {
+  .content .content__about .content__about_bio {
+    gap: 20px;
+  }
+  .content .content__about .content__about_bio .content__about_bio_title {
+    font-size: 48px;
+  }
+  .content .content__about .content__about_bio .content__about_bio_desc {
+    font-size: 18px;
+  }
+  .content .content__about .content__about_skills {
+    gap: 20px;
+  }
+  .content .content__about .content__about_skills .content__about_skills_title {
+    font-size: 48px;
+  }
+  .content .content__about .content__about_skills .content__about_skills_list {
+    gap: 40px;
+  }
+  .content .content__about .content__about_skills .content__about_skills_list .content__about_skills_list_item div {
+    font-size: 14px;
+  }
+  .content .content__about .content__about_skills .content__about_skills_experience .content__about_skills_experience_item {
+    padding: 10px 35px;
+  }
+  .content .content__about .content__about_skills .content__about_skills_experience .content__about_skills_experience_item .content__about_skills_experience_item_title {
+    font-size: 20px;
+  }
+  .content .content__about .content__about_skills .content__about_skills_experience .content__about_skills_experience_item .content__about_skills_experience_item_subtitle {
+    font-size: 12px;
+  }
+  .content .content__about .content__about_skills .content__about_skills_experience .content__about_skills_experience_item .content__about_skills_experience_item_desc {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .content .content__about {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    display: none;
+  }
+  .content .content__about .content__about_bio {
+    width: 100%;
+    align-items: center;
+  }
+  .content .content__about .content__about_bio .content__about_bio_title {
+    font-size: 36px;
+    text-align: center;
+  }
+  .content .content__about .content__about_bio .content__about_bio_desc {
+    font-size: 14px;
+    width: 80%;
+    text-align: center;
+  }
+  .content .content__about .content__about_skills {
+    width: 100%;
+  }
+  .content .content__about .content__about_skills .content__about_skills_title {
+    font-size: 36px;
+    text-align: center;
+  }
+  .content .content__about .content__about_skills .content__about_skills_list {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+  }
+  .content .content__about .content__about_skills .content__about_skills_list .content__about_skills_list_item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .content .content__about .content__about_skills .content__about_skills_list .content__about_skills_list_item div {
+    font-size: 14px;
+    text-align: center;
+  }
+  .content .content__about .content__about_skills .content__about_skills_experience {
+    justify-content: center;
+  }
+  .content .content__about .content__about_skills .content__about_skills_experience .content__about_skills_experience_item {
+    width: 50%;
+  }
+  .content .content__about .content__about_skills .content__about_skills_experience .arrowleft {
+    left: 14px;
+    font-size: 36px;
+    color: #414141;
+  }
+  .content .content__about .content__about_skills .content__about_skills_experience .arrowright {
+    right: 14px;
+    font-size: 36px;
+    color: #414141;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .content .content__about .content__about_skills .content__about_skills_expdots {
+    display: none;
+  }
+}
+@media only screen and (max-width: 427px) {
+  .content .content__about {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    display: none;
+  }
+  .content .content__about .content__about_bio {
+    width: 100%;
+    align-items: center;
+  }
+  .content .content__about .content__about_bio .content__about_bio_title {
+    font-size: 26px;
+    text-align: center;
+  }
+  .content .content__about .content__about_bio .content__about_bio_desc {
+    font-size: 12px;
+    width: 80%;
+    text-align: center;
+  }
+  .content .content__about .content__about_skills {
+    width: 100%;
+  }
+  .content .content__about .content__about_skills .content__about_skills_title {
+    font-size: 26px;
+    text-align: center;
+  }
+  .content .content__about .content__about_skills .content__about_skills_list {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+  }
+  .content .content__about .content__about_skills .content__about_skills_list .content__about_skills_list_item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .content .content__about .content__about_skills .content__about_skills_list .content__about_skills_list_item div {
+    font-size: 12px;
+    text-align: center;
+  }
+  .content .content__about .content__about_skills .content__about_skills_experience .content__about_skills_experience_item {
+    width: 60%;
+    padding: 20px 20px;
+  }
+  .content .content__about .content__about_skills .content__about_skills_experience .content__about_skills_experience_item .content__about_skills_experience_item_title {
+    font-size: 16px;
+  }
+  .content .content__about .content__about_skills .content__about_skills_experience .content__about_skills_experience_item .content__about_skills_experience_item_subtitle {
+    font-size: 12px;
+  }
+  .content .content__about .content__about_skills .content__about_skills_experience .content__about_skills_experience_item .content__about_skills_experience_item_desc {
+    font-size: 12px;
+  }
+  .content .content__about .content__about_skills .content__about_skills_experience .arrowleft {
+    left: 10px;
+    font-size: 36px;
+    color: #414141;
+  }
+  .content .content__about .content__about_skills .content__about_skills_experience .arrowright {
+    right: 10px;
+    font-size: 36px;
+    color: #414141;
+  }
+}
 
 .footer {
   display: flex;
