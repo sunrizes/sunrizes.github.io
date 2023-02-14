@@ -739,11 +739,6 @@ body {
   align-items: center;
   gap: 40px;
 }
-.footer .footer__right .footer__right_socials {
-  display: flex;
-  flex-direction: row;
-  gap: 30px;
-}
 .footer .footer__right .footer__right_date {
   margin: 0;
   font-family: "CreatoDisplay-Bold";
@@ -778,23 +773,19 @@ body {
   .footer .footer__right {
     gap: 15px;
   }
-  .footer .footer__right .footer__right_socials {
-    gap: 15px;
-  }
-  .footer .footer__right .footer__right_socials img {
-    width: 30px;
-    height: 30px;
-  }
   .footer .footer__right .footer__right_date {
     font-size: 14px;
   }
 }
 @media only screen and (max-width: 768px) {
   .footer {
-    justify-content: flex-end;
+    justify-content: center;
   }
   .footer .footer__left {
     display: none;
+  }
+  .footer .footer__right {
+    justify-content: center;
   }
 }
 @media only screen and (max-width: 427px) {

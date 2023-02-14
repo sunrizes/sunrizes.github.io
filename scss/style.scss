@@ -852,11 +852,6 @@ body {
         align-items: center;
         gap: 40px;
 
-        .footer__right_socials {
-            @include flex-row;
-            gap: 30px;
-        }
-
         .footer__right_date {
             margin: 0;
             font-family: 'CreatoDisplay-Bold';
@@ -904,15 +899,6 @@ body {
         .footer__right {
             gap: 15px;
 
-            .footer__right_socials {
-                gap: 15px;
-
-                img {
-                    width: 30px;
-                    height: 30px;
-                }
-            }
-
             .footer__right_date {
                 font-size: 14px;
             }
@@ -920,10 +906,14 @@ body {
     }
 
     @media only screen and (max-width : $phone-landscape) {
-        justify-content: flex-end;
+        justify-content: center;
 
         .footer__left {
             display: none;
+        }
+
+        .footer__right {
+            justify-content: center;
         }
     }
 
